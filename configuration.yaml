@@ -93,11 +93,11 @@ switch:
     pulselength: 311
     switches:
       bed_back_light:
-        code_on: 1331537
-        code_off: 1331540
+        code_on: !secret rpi_b_on 
+        code_off: !secret rpi_b_off 
       living_room_corner_light:
-        code_on: 1332305 
-        code_off: 1332308 
+        code_on: !secret rpi_c_on 
+        code_off: !secret rpi_c_off 
 
 ## RPI_RF Codes:
 # A on  1328465
@@ -114,7 +114,7 @@ media_player:
   # Samsung-TV
   - platform: samsungtv
     host: 192.168.0.111
-    name: samsung_mu8009
+    name: samsung_tv
     port: 8001
 
 

@@ -56,8 +56,9 @@ light.living_room_right:
 #########################
 ## TV
 #########################
-media_player.samsung_mu8009:
-  friendly_name: Samsung MU8009
+media_player.samsung_tv:
+  #friendly_name: Samsung MU8009
+  friendly_name: !secret tv_model 
   aliases:
   - Samsung TV
   - Samsung-TV
@@ -69,10 +70,6 @@ media_player.samsung_mu8009:
   - Flimmerkasten
   - Röhre
   - Fernsehgerät
-  - 4K TV
-  - UHD TV
-  - 4K-TV
-  - UHD-TV
 #########################
 ## Smart Plug
 #########################
