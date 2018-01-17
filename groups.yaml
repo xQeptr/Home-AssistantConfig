@@ -1,0 +1,18 @@
+#default_view:
+#  view: yes
+#  icon: mdi:home
+#  entities:
+#    - group.lights_livingroom
+
+lights_livingroom:
+  name: lights_tv 
+  #view: yes
+  entities:
+    - light.living_room_right
+    - light.living_room_left
+
+all_lights_livingroom:
+  name: test_lights
+  entities:
+    - group.lights_livingroom
+    - switch.living_room_corner_light

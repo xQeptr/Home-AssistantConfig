@@ -1,0 +1,91 @@
+#########################
+## Lights
+#########################
+group.lights_livingroom:
+  friendly_name: Lampen TV
+  aliases:
+  - Lampen TV
+  - Lampen neben dem TV
+  - Lampen am TV
+  - beide Lampen TV
+  - beide neben dem Lampen TV
+  - beide am Lampen TV
+light.living_room_left:
+  friendly_name: TV Lampe links
+  aliases:
+  - linke Benachrichtigungslampe
+  - links vom Fernseher
+  - Lampe links vom Fernseher
+  - linke Ecklampe
+  - linke Eckleuchte
+  - linke Stehlampe
+  - linke Stehleuchte
+  - linke Standlampe
+  - linke Standleuchte
+  - Lampe links vom TV
+  - Lampe links neben dem TV
+  - Lampe links neben dem Fernseher
+  - left notification lamp
+  - left notification light
+  - lamp left to TV
+  - lamp left of TV
+  - light left to TV
+  - light left of TV
+light.living_room_right:
+  friendly_name: TV Lampe rechts
+  aliases:
+  - rechte Benachrichtigungslampe
+  - rechts vom Fernseher
+  - Lampe rechts vom Fernseher
+  - rechte Lampe
+  - rechte Ecklampe
+  - rechte Eckleuchte
+  - rechte Stehlampe
+  - rechte Stehleuchte
+  - rechte Standlampe
+  - rechte Standleuchte
+  - Lampe rechts vom TV
+  - Lampe rechts neben dem TV
+  - Lampe rechts neben dem Fernseher
+  - right notification lamp
+  - right notification light
+  - lamp right to TV
+  - light right of TV
+  - lamp right to TV
+  - light right of TV
+#########################
+## TV
+#########################
+media_player.samsung_mu8009:
+  friendly_name: Samsung MU8009
+  aliases:
+  - Samsung TV
+  - Samsung-TV
+  - TV
+  - TV-Gerät
+  - Fernseher
+  - Glotze
+  - Flimmerkiste
+  - Flimmerkasten
+  - Röhre
+  - Fernsehgerät
+  - 4K TV
+  - UHD TV
+  - 4K-TV
+  - UHD-TV
+#########################
+## Smart Plug
+#########################
+switch.heimkino:
+  friendly_name: Schalter Heimkino
+  aliases:
+  - Heimkino
+  - Steckdose Heimkino
+  - Schalter Heimkino
+#########################
+## Groups
+#########################
+
+#########################
+## Sensors ?
+#########################
