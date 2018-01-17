@@ -11,8 +11,8 @@ lights_livingroom:
     - light.living_room_right
     - light.living_room_left
 
-all_lights_livingroom:
-  name: test_lights
-  entities:
-    - group.lights_livingroom
-    - switch.living_room_corner_light
+#all_lights_livingroom:
+#  name: test_lights
+#  entities:
+#    - group.lights_livingroom
+#    - switch.living_room_corner_light

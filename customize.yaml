@@ -1,15 +1,6 @@
 #########################
 ## Lights
 #########################
-group.lights_livingroom:
-  friendly_name: Lampen TV
-  aliases:
-  - Lampen TV
-  - Lampen neben dem TV
-  - Lampen am TV
-  - beide Lampen TV
-  - beide neben dem Lampen TV
-  - beide am Lampen TV
 light.living_room_left:
   friendly_name: TV Lampe links
   aliases:
@@ -53,11 +44,21 @@ light.living_room_right:
   - light right of TV
   - lamp right to TV
   - light right of TV
+switch.bed_back_light:
+  friendly_name: Beleuchtung Bett
+  aliases:
+  - Licht hinterm Bett
+  - Bett indirekte Beleuchtung
+switch.living_room_corner_light:
+  friendly_name: Ecklampe Wohnzimmer
+  aliases:
+  - Ecklampe Wohnzimmer
+  - Wohnzimmerlampe in der Ecke
+  - Lampe in der Ecke 
 #########################
 ## TV
 #########################
 media_player.samsung_tv:
-  #friendly_name: Samsung MU8009
   friendly_name: !secret tv_model 
   aliases:
   - Samsung TV
@@ -82,7 +83,23 @@ switch.heimkino:
 #########################
 ## Groups
 #########################
-
+group.lights_livingroom:
+  friendly_name: Lampen TV
+  aliases:
+  - Lampen TV
+  - Lampen neben dem TV
+  - Lampen am TV
+  - Licht TV
+  - Licht neben dem TV
+  - Licht am TV
+  - beide Lampen TV
+  - beide neben dem Lampen TV
+  - beide am Lampen TV
+group.all_lights_livingroom:
+  friendly_name: Lampen Wohnzimmer
+  aliases:
+  - Lampen Wohnzimmer
+  - Licht Wohnzimmer
 #########################
 ## Sensors ?
 #########################
