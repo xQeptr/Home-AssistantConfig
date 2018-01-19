@@ -1,8 +1,10 @@
-#default_view:
-#  view: yes
-#  icon: mdi:home
-#  entities:
-#    - group.lights_livingroom
+default_view:
+  view: yes
+  icon: mdi:home
+  entities:
+    - group.home_cinema
+    - !secret home_google_media_group
+    - group.all_light_switches
 
 lights_livingroom:
   name: lights_tv 
@@ -11,8 +13,46 @@ lights_livingroom:
     - light.living_room_right
     - light.living_room_left
 
-#all_lights_livingroom:
-#  name: test_lights
-#  entities:
-#    - group.lights_livingroom
-#    - switch.living_room_corner_light
+livingroom:
+  name: Wohnzimmer
+  view: yes
+  entities:
+  - group.lights_livingroom
+  - group.switches_livingroom
+  - media_player.samsung_tv
+  - media_player.wohnzimmer
+
+#test
+switches_livingroom:
+  name: Steckdosen
+  control: hidden
+  entities:
+  - switch.heimkino
+  - switch.living_room_corner_light
+
+bedroom:
+  name: Schlafzimmer
+  view: yes
+  entities:
+  - switch.bed_back_light
+  - media_player.schlafzimmer_2
+
+home_cinema:
+  name: TV_Board
+  entities:
+  - switch.heimkino
+  - media_player.samsung_tv
+  - group.lights_livingroom
+
+all_light_switches:
+  name: switch_lights
+  entities:
+  - switch.living_room_corner_light
+  - switch.bed_back_light
+  - group.lights_livingroom
+
+all_rpi_switches:
+  name: rpi_switches
+  entities:
+  - switch.living_room_corner_light
+  - switch.bed_back_light

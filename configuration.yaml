@@ -14,7 +14,7 @@ homeassistant:
   customize: !include customize.yaml
 
 # Show links to resources in log and frontend
-introduction:
+#introduction:
 
 # Enables the frontend
 frontend:
@@ -68,6 +68,7 @@ tts:
 
 # Cloud
 cloud:
+
 # Light:
 light:
   - platform: yeelight
@@ -106,6 +107,10 @@ media_player:
     host: 192.168.0.111
     name: samsung_tv
     port: 8001
+#  # Google
+#  - platform: cast
+#    name: google_home
+#    host: 192.168.0.38
 
 
 # Includes

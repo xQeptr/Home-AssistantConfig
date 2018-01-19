@@ -46,11 +46,13 @@ light.living_room_right:
   - light right of TV
 switch.bed_back_light:
   friendly_name: Beleuchtung Bett
+  icon: mdi:lightbulb
   aliases:
   - Licht hinterm Bett
   - Bett indirekte Beleuchtung
 switch.living_room_corner_light:
   friendly_name: Ecklampe Wohnzimmer
+  icon: mdi:lightbulb
   aliases:
   - Ecklampe Wohnzimmer
   - Wohnzimmerlampe in der Ecke
@@ -60,6 +62,7 @@ switch.living_room_corner_light:
 #########################
 media_player.samsung_tv:
   friendly_name: !secret tv_model 
+  icon: mdi:television
   aliases:
   - Samsung TV
   - Samsung-TV
@@ -75,7 +78,8 @@ media_player.samsung_tv:
 ## Smart Plug
 #########################
 switch.heimkino:
-  friendly_name: Schalter Heimkino
+  friendly_name: Heimkino
+  icon: mdi:theater
   aliases:
   - Heimkino
   - Steckdose Heimkino
@@ -85,6 +89,7 @@ switch.heimkino:
 #########################
 group.lights_livingroom:
   friendly_name: Lampen TV
+  icon: mdi:lamp
   aliases:
   - Lampen TV
   - Lampen neben dem TV
@@ -95,11 +100,58 @@ group.lights_livingroom:
   - beide Lampen TV
   - beide neben dem Lampen TV
   - beide am Lampen TV
-group.all_lights_livingroom:
-  friendly_name: Lampen Wohnzimmer
+group.all_light_switches:
+  friendly_name: Alle Lampen
+  icon: mdi:lightbulb
   aliases:
-  - Lampen Wohnzimmer
-  - Licht Wohnzimmer
+  - Alle Lampen
+  - Alle Lichter
+  - Alle Leuchten
+group.all_rpi_switches:
+  friendly_name: Funksteckdosen
+  icon: mdi:power-plug
+  aliases:
+  - Funksteckdosen
+group.livingroom:
+  friendly_name: Wohnzimmer
+  icon: mdi:sofa
+  aliases:
+  - Wohnzimmer
+  - Glotzbude
+group.bedroom:
+  friendly_name: Schlafzimmer
+  icon: mdi:hotel
+  aliases:
+  - Schlafzimmer
+  - Bumsbude
+group.home_cinema:
+  friendly_name: TV Board
+  icon: mdi:theater
+  aliases:
+  - TV Board
+  - Glotzkotzkommode
+  - TV Bank
 #########################
-## Sensors ?
+## Google Devices
 #########################
+!secret home_google_media_group:
+  friendly_name: Google Home Wohnung
+  icon: mdi:surround-sound
+  aliases:
+    - Google Home Wohnung
+    - Wohnung
+    - !secret home_location_name
+    - Wohnung !secret home_location_name
+media_player.schlafzimmer_2:
+  friendly_name: Google Home Schlafzimmer
+  aliases:
+    - Google Home Mini
+    - Schlafzimmer
+    - Schlafzimmer !secret home_location_name
+media_player.wohnzimmer:
+  friendly_name: Google Home Wohnzimmer
+  icon: mdi:google-home
+  aliases:
+    - Google Home
+    - Wohnzimmer
+    - Wohnzimmer !secret home_location_name
